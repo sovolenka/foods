@@ -1,0 +1,193 @@
+body{
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 1.6;
+	color: white;
+	background: url("../images/Macarons.jpg") center no-repeat;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.backgroundImage {
+background-color: rgba(161, 144, 97, 0.301);
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.center_container{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  margin: center;
+  margin-left: 25%;
+}
+
+.header{
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+ul.header-menu li > a {
+  display: block;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+}
+
+ul.header-menu > li {
+  margin: 0 10px;
+  display:inline-block;
+}
+
+ul.header-menu li a span {
+  margin-left: 5px;
+}
+
+ul.header-menu > li:nth-child(2) {
+  position: relative;
+}
+
+ul.header-menu > li:nth-child(2):hover #header-submenu {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+ul.header-socials li > a {
+  display: block;
+  padding: 0 16px;
+}
+
+ul.header-menu li > a,
+ul.header-socials li > a {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+ul li a:hover {
+  color: #20c997;
+}
+
+#header-submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: inline-block;
+  box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border: 1px solid #edf0f5;
+  border-top: 2px solid #20c997;
+  background: #fff;
+      -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+      -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+      -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+  z-index: 2;
+}
+
+#header-submenu li > a {
+  display: block;
+  text-transform: none;
+  padding: 13px 75px 14px 20px;
+  font-size: 16px;
+  color: #343a40;
+}
+
+#header-submenu li > a:hover {
+  background: #eff0f4;
+  color: #25262a;
+}
+
+#bg-for-nav-hiden {
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#nav-hidden {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: -280px;
+  z-index: 5;
+  height: 100%;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  padding-left: 40px;
+}
+
+#open-bar {
+  display: none;
+}
+
+#open {
+  cursor: pointer;
+  font-size: 1.4em;
+}
+
+#close {
+  color: #212529;
+  text-align: right;
+  padding: 35px 10px 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#nav-hidden nav {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#nav-hidden-menu {
+  display: block;
+  margin-bottom: 50px;
+}
+
+#nav-hidden-menu li a {
+  display: block;
+  font-size: 20px;
+  color: #212529;
+  padding: 15px 150px 15px 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#nav-hidden-menu li a:hover {
+  color: #20c997;
+}
+
+#hidden-socials li:nth-child(2) a {
+  margin: 0 30px;
+}
